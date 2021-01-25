@@ -1,0 +1,18 @@
+plugins {
+    id 'war'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'lib', include: ['javaee-api-8.0.jar'])
+//   providedCompile 'com.yahoo.vespa' , name:'aannotations' , version'7.274.2'
+    // :annotations:16.0.2'
+    //  compile group: 'javax', name: 'javaee-api', version: '8.0'
+    // provided 'javax:javaee-api:8'
+}
